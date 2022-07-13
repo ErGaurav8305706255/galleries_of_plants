@@ -12,7 +12,28 @@ class BottomNavigatorScreen extends StatefulWidget {
   State<BottomNavigatorScreen> createState() => _BottomNavigatorScreenState();
 }
 
-class _BottomNavigatorScreenState extends State<BottomNavigatorScreen> {
+class _BottomNavigatorScreenState extends State<BottomNavigatorScreen> with WidgetsBindingObserver {
+
+  late AppLifecycleState _appLifecycleState;
+
+  @override
+  void initState(){
+    super.initState();
+    WidgetsBinding.instance?.addObserver(this);
+  }
+  @override
+  void dispose(){
+    WidgetsBinding.instance?.removeObserver(this);
+    super.dispose();
+  }
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state){
+    setState(() {
+      _appLifecycleState = state;
+      print("BottomNavigatorScreen State: $_appLifecycleState");
+    });
+  }
+
   int _selecttedIndex = 0;
   static final List _widgetoption = [
     const HomeScreen(),

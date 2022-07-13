@@ -237,11 +237,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                           ),
                                           child: ClipRRect(
                                               borderRadius: const BorderRadius.only(topRight: Radius.circular(10),topLeft: Radius.circular(10),bottomRight: Radius.circular(80),bottomLeft: Radius.circular(20)),
-                                              child: Expanded(
-                                                  child: Image.asset(item[index]['image'],
-                                                      fit: BoxFit.cover,
-                                                      height: 200,
-                                                      width: 200))),
+                                              child: Image.asset(item[index]['image'],
+                                                  fit: BoxFit.cover,
+                                                  height: 200,
+                                                  width: 200)),
                                         ),
                                         Padding(
                                           padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 5),
@@ -302,11 +301,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                           ),
                                           child: ClipRRect(
                                               borderRadius: const BorderRadius.only(topRight: Radius.circular(10),topLeft: Radius.circular(10),bottomRight: Radius.circular(80),bottomLeft: Radius.circular(20)),
-                                              child: Expanded(
-                                                  child: Image.asset(item2[index]['image'],
-                                                      fit: BoxFit.cover,
-                                                      height: 200,
-                                                      width: 200))),
+                                              child: Image.asset(item2[index]['image'],
+                                                  fit: BoxFit.cover,
+                                                  height: 200,
+                                                  width: 200)),
                                         ),
                                         Padding(
                                           padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 5),
@@ -364,11 +362,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                           ),
                                           child: ClipRRect(
                                               borderRadius: const BorderRadius.only(topRight: Radius.circular(10),topLeft: Radius.circular(10),bottomRight: Radius.circular(80),bottomLeft: Radius.circular(20)),
-                                              child: Expanded(
-                                                  child: Image.asset(item3[index]['image'],
-                                                      fit: BoxFit.cover,
-                                                      height: 200,
-                                                      width: 200))),
+                                              child: Image.asset(item3[index]['image'],
+                                                  fit: BoxFit.cover,
+                                                  height: 200,
+                                                  width: 200)),
                                         ),
                                         Padding(
                                           padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 5),
@@ -426,11 +423,10 @@ class _HomeScreenState extends State<HomeScreen> {
                                           ),
                                           child: ClipRRect(
                                               borderRadius: const BorderRadius.only(topRight: Radius.circular(10),topLeft: Radius.circular(10),bottomRight: Radius.circular(80),bottomLeft: Radius.circular(20)),
-                                              child: Expanded(
-                                                  child: Image.asset(item4[index]['image'],
-                                                      fit: BoxFit.cover,
-                                                      height: 200,
-                                                      width: 200))),
+                                              child: Image.asset(item4[index]['image'],
+                                                  fit: BoxFit.cover,
+                                                  height: 200,
+                                                  width: 200)),
                                         ),
                                         const Padding(
                                           padding: EdgeInsets.symmetric(horizontal: 20,vertical: 5),
@@ -471,14 +467,22 @@ class _HomeScreenState extends State<HomeScreen> {
                                 }),
                       ]),
                     ),
-                    Text(StringConstant.recentshop,style: const TextStyle(
-                      fontSize: 16,fontWeight: FontWeight.bold
+                    Text(StringConstant.recentshop,
+                      style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold
                     ),),
                     const SizedBox(height: 10),
                     Row(
                       children: [
-                        ClipRRect(borderRadius: BorderRadius.circular(10),
-                            child: Image.asset(IconConstant.indoor3,fit: BoxFit.cover,height: 60,width: 60)),
+                        ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Image.asset(
+                                IconConstant.indoor3,
+                                fit: BoxFit.cover,
+                                height: 60,
+                                width: 60
+                            )),
                         const SizedBox(width: 15),
                         Column(crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
